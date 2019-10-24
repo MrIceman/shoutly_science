@@ -1,33 +1,35 @@
 import json
-
 import matplotlib.pyplot as plt
 
-from nlp.engine import classify_report
+from nlp.bag_of_words.engine import get_weighted_words_of_stories
+from nlp.dictionary.engine import classify_report
 
 lng = []
 lat = []
 
-with open('data/july-august-niedersachsen-2019.json') as file:
+with open('data/located_data_22-october.json', encoding='utf8') as file:
     json_data = json.load(file)
 
 temp_results = []
 for i in json_data:
-    story = i['body']
-    destructed_name = i['company']['name'].split()
+    story = i['story']
 
     model = {
         'title': i['title'],
-        'local': destructed_name[len(destructed_name) - 1],
+        'local': i['local'],
         'url': i['url'],
-        'date': i['published'],
-        'story': i['body'],
-        'foreign_key': i['id'],
+        'date': i['date'],
+        'story': i['story'],
         'class': 'other'
     }
     temp_results.append(model)
 
 classified_data = {}
 
+# with open('words.json', 'w') as file:
+#    json.dump([{'{}'.format(k): '{}'.format(v)} for k, v in tfidf.items()], file, ensure_ascii=False)
+
+"""
 for i in temp_results:
     classify_report(i)
     if i['class'] != 'other':
@@ -48,7 +50,31 @@ with open('unclassified_data.json', 'w', encoding='UTF8') as classified:
     json.dump(unclassified_data, classified, ensure_ascii=False)
 
 # shows amount of classified and unclassified
-# plt.plot(['classified', 'unclassified'], [len(classified_summed_data), len(unclassified_data)])
 
-plt.plot([key for key, value in classified_data.items()], [len(value) for key, value in classified_data.items()])
+with open('words.json') as json_file:
+    data = json.load(json_file)
+
+temp_dict = {}
+for x in data:
+    temp_dict[list(x.keys())[0]] = list(x.values())[0]
+
+sorted_dict = {}
+for key, value in sorted(temp_dict.items(), key=lambda item: item[0], reverse=True):
+    sorted_dict[key] = temp_dict[key]
+
+plt.plot([k for k in list(sorted_dict.keys())[0:5]],
+         [v for v in list(sorted_dict.values())[0:5]])
 plt.show()
+"""
+matrix, index_dict = get_weighted_words_of_stories(temp_results)
+
+
+def get_words_for_story(story_index):
+    results = {}
+    for row in matrix[story_index].toarray():
+        for column, value in enumerate(row):
+            if value > 0.2:
+                results[index_dict[column]] = value
+    for k, v in results.items():
+        print('{}: {}'.format(k, v))
+    # return results

@@ -1,5 +1,12 @@
 from nlp.classes import WORDS, CLASSES
-from util.word import mark_in_word
+from nlp.util.text import clean_and_tokenize_text
+from nlp.util.word import mark_in_word
+from nltk.corpus import stopwords
+import nltk
+
+nltk.download('stopwords')
+
+stop_words = stopwords.words('german')
 
 
 def classify_report(report):
@@ -13,7 +20,8 @@ def classify_report(report):
     if found:
         return
     # nothing was found within the title lets check the body
-    for word in report['story'].replace('\n', '').replace('-', ' ').split():
+    filtered_tokenized_words = clean_and_tokenize_text(report['story'])
+    for word in filtered_tokenized_words:
         lowered_word = word.lower()
         # lets compare the word with our classification names
         if found:
