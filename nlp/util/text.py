@@ -45,6 +45,10 @@ def is_trash_word(word):
     return False
 
 
+def is_bp_text(word):
+    return 'bp' in word and len(word) <= 5
+
+
 def clean_text(text: str) -> str:
     splitted_story = text.replace('\n', '') \
         .replace('-', ' ') \
@@ -66,7 +70,7 @@ def clean_text(text: str) -> str:
     for word in splitted_story:
         lowered_word = word.lower()
         if lowered_word in stop_words or lowered_word.isdigit() or len(lowered_word) < 5 \
-                or is_trash_word(lowered_word):
+                or is_trash_word(lowered_word) or is_bp_text(lowered_word):
             continue
         else:
             if lowered_word == 'cuxhaven':
