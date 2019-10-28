@@ -1,6 +1,6 @@
 from nlp.classes import WORDS, CLASSES
 from nlp.util.text import clean_and_tokenize_text
-from nlp.util.word import mark_in_word
+from nlp.util.word import word_in_list
 from nltk.corpus import stopwords
 import nltk
 
@@ -13,7 +13,7 @@ def classify_report(report):
     found = False
     for key, value in WORDS.items():
         title = report['title'].replace('\n', '').replace('-', ' ').lower()
-        if mark_in_word(title, value):
+        if word_in_list(title, value):
             classification = CLASSES[key]
             report['class'] = classification
             found = True
@@ -29,7 +29,7 @@ def classify_report(report):
         for key, value in WORDS.items():
             if found:
                 return
-            if mark_in_word(lowered_word, value):
+            if word_in_list(lowered_word, value):
                 classification = CLASSES[key]
                 report['class'] = classification
                 found = True

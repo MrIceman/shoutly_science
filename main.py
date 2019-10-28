@@ -1,8 +1,6 @@
 import json
-import matplotlib.pyplot as plt
 
-from nlp.bag_of_words.engine import _get_weighted_words_of_stories
-from nlp.dictionary.engine import classify_report
+from nlp.bag_of_words.engine import _get_weighted_words_of_stories, classify_reports
 
 lng = []
 lat = []
@@ -31,7 +29,7 @@ classified_data = {}
 # with open('words.json', 'w') as file:
 #    json.dump([{'{}'.format(k): '{}'.format(v)} for k, v in tfidf.items()], file, ensure_ascii=False)
 
-"""
+show_ = """
 for i in temp_results:
     classify_report(i)
     if i['class'] != 'other':
@@ -75,8 +73,21 @@ def get_words_for_story(story_index):
     results = {}
     for row in matrix[story_index].toarray():
         for column, value in enumerate(row):
-            if value > 0.2:
+            if value > 0:
                 results[index_dict[column]] = value
     for k, v in results.items():
         print('{}: {}'.format(k, v))
     # return results
+
+
+classify_reports(temp_results)
+
+
+def analyse_classes(reports):
+    classifications = {}
+    for report in reports:
+        y = classifications.get(report['class'], [])
+        y.append(i)
+        classifications[report['class']] = y
+    for k, v in classifications.items():
+        print('{}: {}'.format(k, len(v)))

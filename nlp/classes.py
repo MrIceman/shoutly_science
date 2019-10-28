@@ -1,14 +1,17 @@
+MULTIPLE_INDEX = 101
+
 CLASSES = {
     0: 'accident',
     1: 'thief',
     2: 'burglary',
     3: 'violence',
-    4: 'collection',
+    4: 'press',
     5: 'harrasment',
     6: 'natural',
     7: 'vandalism',
     8: 'drugs',
     100: 'other',
+    MULTIPLE_INDEX: 'multiple'
 }
 
 WORDS = {
@@ -21,7 +24,8 @@ WORDS = {
     # burlary
     2: ['einbruch', 'aufgebrochen', 'einbrecher', 'einbrechen', 'einbrüche'],
     # violence
-    3: ['schlägerei', 'messer', 'pistole', 'schießerei', 'kampf', 'faust', 'körperverletzung', 'erpressung', 'mord', 'tötungsdelikt', 'greift',
+    3: ['schlägerei', 'messer', 'pistole', 'schießerei', 'kampf', 'faust', 'körperverletzung', 'erpressung', 'mord',
+        'tötungsdelikt', 'greift',
         'angegriffen', 'beworfen', 'schlaegerei', 'geschlagen'],
     # bp pressemeldung
     4: ['pressemeldung', 'pressemeldungen'],
