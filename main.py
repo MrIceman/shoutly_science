@@ -1,7 +1,7 @@
 import json
 import matplotlib.pyplot as plt
 
-from nlp.bag_of_words.engine import get_weighted_words_of_stories
+from nlp.bag_of_words.engine import _get_weighted_words_of_stories
 from nlp.dictionary.engine import classify_report
 
 lng = []
@@ -12,6 +12,8 @@ with open('data/located_data_22-october.json', encoding='utf8') as file:
 
 temp_results = []
 for i in json_data:
+    if i is None:
+        continue
     story = i['story']
 
     model = {
@@ -66,7 +68,7 @@ plt.plot([k for k in list(sorted_dict.keys())[0:5]],
          [v for v in list(sorted_dict.values())[0:5]])
 plt.show()
 """
-matrix, index_dict = get_weighted_words_of_stories(temp_results)
+matrix, index_dict = _get_weighted_words_of_stories(temp_results)
 
 
 def get_words_for_story(story_index):
