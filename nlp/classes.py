@@ -12,16 +12,26 @@ CLASSES = {
 }
 
 WORDS = {
+    # accident
     0: ['unfall', 'autounfall', 'verkehrsunfall', 'crash', 'stoß', 'fahrbahn', 'unfallflucht', 'trunkenheit',
         'verkehrsunfallflucht'],
+    # thief
     1: ['diebstahl', 'dieb', 'diebe', 'geklaut', 'überfall', 'raub', 'raubüberfall', 'stehlen', 'gestohlen',
-        'aufbrüche', 'aufbruch', 'entwendet', 'enkeltrick'],
+        'aufbrüche', 'aufbruch', 'entwendet', 'enkeltrick', 'bestiehlt', 'taschendieb', 'autotieb'],
+    # burlary
     2: ['einbruch', 'aufgebrochen', 'einbrecher', 'einbrechen', 'einbrüche'],
-    3: ['schlägerei', 'messer', 'pistole', 'schießerei', 'kampf', 'faust', 'körperverletzung', 'erpressung', 'mord', 'tötungsdelikt'],
+    # violence
+    3: ['schlägerei', 'messer', 'pistole', 'schießerei', 'kampf', 'faust', 'körperverletzung', 'erpressung', 'mord', 'tötungsdelikt', 'greift',
+        'angegriffen', 'beworfen', 'schlaegerei', 'geschlagen'],
+    # bp pressemeldung
     4: ['pressemeldung', 'pressemeldungen'],
+    # harrassment
     5: ['beleidigung', 'beschimpfen', 'spucken', 'beleidigte', 'beleidigt', 'beschimpfte', 'beschimpfungen',
-        'beschimpfung', 'belästigt'],
+        'beschimpfung', 'belästigt', 'belaestigt'],
+    # natural
     6: ['blitzeinschlag', 'blitz', 'gewitter', 'donner', 'sturm', 'feuer', 'brennen'],
-    7: ['sachbeschädigung', 'vandalismus', 'randaliert'],
+    # vandalism
+    7: ['sachbeschädigung', 'vandalismus', 'randaliert', 'graffiti', 'sprayer', 'beschmiert', 'graffitisprayer'],
+    # drugs
     8: ['alkohol', 'drogen', 'marijuhana', 'lsd']
 }
