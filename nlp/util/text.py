@@ -62,14 +62,11 @@ def clean_text(text: str) -> str:
         .replace('7', '') \
         .replace('8', '') \
         .replace('9', '') \
-        .replace('ü', 'ue') \
-        .replace('ä', 'ae') \
-        .replace('ö', 'oe') \
         .split(' ')
     new_story = []
     for word in splitted_story:
         lowered_word = word.lower()
-        if lowered_word in stop_words or lowered_word.isdigit() or len(lowered_word) < 5 \
+        if lowered_word in stop_words or lowered_word.isdigit() or len(lowered_word) < 4 \
                 or is_trash_word(lowered_word) or is_bp_text(lowered_word):
             continue
         else:

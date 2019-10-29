@@ -1,71 +1,73 @@
 import json
 
+import matplotlib.pyplot as plt
 from nlp.bag_of_words.engine import _get_weighted_words_of_stories, classify_reports
 
-lng = []
-lat = []
 
-with open('data/located_data_22-october.json', encoding='utf8') as file:
-    json_data = json.load(file)
+def analyse_classes(reports):
+    classifications = {}
+    for report in reports:
+        y = classifications.get(report['class'], [])
+        y.append(i)
+        if report['class'] == 'other':
+            print(report['title'])
+        classifications[report['class']] = y
+    for k, v in classifications.items():
+        print('{}: {}'.format(k, len(v)))
+
+    plt.tight_layout()
+    plt.plot([k for k, _ in classifications.items()], [len(v) for _, v in classifications.items()])
+    plt.show()
+    return classifications
+
+
+def add_json_from_file(target_collection, filename):
+    add_urls = {}
+    add_ids = []
+    with open(filename, encoding='utf8') as file:
+        _data = json.load(file)
+        for i in _data:
+            if add_urls.get(i['url'], None) is None and i['id'] not in add_ids:
+                add_urls[i['url']] = 1
+                add_ids.append(i['id'])
+                target_collection.append(i)
+
+
+json_data = []
+# add_json_from_file(json_data, 'data/located_data_22-october.json')
+add_json_from_file(json_data, 'data/data-dump-28-october.json')
 
 temp_results = []
+
 for i in json_data:
     if i is None:
         continue
-    story = i['story']
+    try:
+        story = i['story']
+    except:
+        story = i['description']
 
-    model = {
-        'title': i['title'],
-        'local': i['local'],
-        'url': i['url'],
-        'date': i['date'],
-        'story': i['story'],
-        'class': 'other'
-    }
-    temp_results.append(model)
+    try:
+        city = i['local']
+    except:
+        city = i['city']
 
-classified_data = {}
+        model = {
+            'title': i['title'],
+            'local': city,
+            'url': i.get('url', ''),
+            'date': i['date'],
+            'story': story,
+            'class': 'other'
+        }
+        temp_results.append(model)
 
-# with open('words.json', 'w') as file:
-#    json.dump([{'{}'.format(k): '{}'.format(v)} for k, v in tfidf.items()], file, ensure_ascii=False)
 
-show_ = """
-for i in temp_results:
-    classify_report(i)
-    if i['class'] != 'other':
-        results = classified_data.get(i['class'], [])
-        results.append(i)
-        classified_data[i['class']] = results
-    else:
-        print('other')
+def classify_and_analyse_temp():
+    classify_reports(temp_results)
+    return analyse_classes(temp_results)
 
-plt.tight_layout()
-# plt.plot([x for x in classified_data.keys()], [len(y) for y in classified_data.values()])
-classified_summed_data = [item for k, v in classified_data.items() for item in v]
-unclassified_data = [v for v in temp_results if v not in classified_summed_data]
 
-with open('unclassified_data.json', 'w', encoding='UTF8') as classified:
-    import json
-
-    json.dump(unclassified_data, classified, ensure_ascii=False)
-
-# shows amount of classified and unclassified
-
-with open('words.json') as json_file:
-    data = json.load(json_file)
-
-temp_dict = {}
-for x in data:
-    temp_dict[list(x.keys())[0]] = list(x.values())[0]
-
-sorted_dict = {}
-for key, value in sorted(temp_dict.items(), key=lambda item: item[0], reverse=True):
-    sorted_dict[key] = temp_dict[key]
-
-plt.plot([k for k in list(sorted_dict.keys())[0:5]],
-         [v for v in list(sorted_dict.values())[0:5]])
-plt.show()
-"""
 matrix, index_dict = _get_weighted_words_of_stories(temp_results)
 
 
@@ -78,16 +80,3 @@ def get_words_for_story(story_index):
     for k, v in results.items():
         print('{}: {}'.format(k, v))
     # return results
-
-
-classify_reports(temp_results)
-
-
-def analyse_classes(reports):
-    classifications = {}
-    for report in reports:
-        y = classifications.get(report['class'], [])
-        y.append(i)
-        classifications[report['class']] = y
-    for k, v in classifications.items():
-        print('{}: {}'.format(k, len(v)))
