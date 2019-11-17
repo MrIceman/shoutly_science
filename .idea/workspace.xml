@@ -1,52 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="660019f7-1d3d-4062-8e84-a1e920148eef" name="Default Changelist" comment="" />
+    <list default="true" id="660019f7-1d3d-4062-8e84-a1e920148eef" name="Default Changelist" comment="updated dictionary">
+      <change afterPath="$PROJECT_DIR$/data/dump-16-11-19.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experimental.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_clustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlp/bag_of_words/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/bag_of_words/engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlp/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unclassified_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/unclassified_data.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/shoutly_science$shoutly_science.coverage" NAME="shoutly_science Coverage Results" MODIFIED="1572304440711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1093866142">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="20" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="json" value="21" />
-          <entry key="md" value="1" />
-          <entry key="py" value="17" />
-          <entry key="txt" value="1" />
+          <entry key="json" value="71" />
+          <entry key="md" value="2" />
+          <entry key="py" value="60" />
+          <entry key="txt" value="2" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="21" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="17" />
+          <entry key="JSON" value="71" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="60" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="1567" />
-          <entry key="dummy" value="5" />
-          <entry key="py" value="5380" />
-          <entry key="txt" value="40" />
+          <entry key="Python Console" value="11061" />
+          <entry key="dummy" value="37" />
+          <entry key="py" value="19860" />
+          <entry key="txt" value="187" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="45" />
-          <entry key="Python" value="6947" />
+          <entry key="PLAIN_TEXT" value="224" />
+          <entry key="Python" value="30921" />
         </counts>
       </usages-collector>
     </session>
@@ -54,46 +80,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
+        <entry file="file://$PROJECT_DIR$/main_clustering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+            <state relative-caret-position="558">
+              <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
+                <marker date="1574021160372" expanded="true" signature="181:545" ph="..." />
+                <marker date="1574021160372" expanded="true" signature="2259:2314" ph="..." />
+                <marker date="1574021160372" expanded="true" signature="2313:2314" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/date.py">
+        <entry file="file://$USER_HOME$/.conda/envs/shoutly_science/lib/python3.6/site-packages/matplotlib/pyplot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="389">
+              <caret line="2841" column="22" selection-start-line="2841" selection-start-column="22" selection-end-line="2841" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experimental.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
               <folding>
-                <marker date="1571614002956" expanded="true" signature="540:543" ph="..." />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nlp/classes.py">
+        <entry file="file://$PROJECT_DIR$/data/dump-16-11-19.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/word.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="4" selection-end-column="16" />
-              <folding>
-                <marker date="1571671034261" expanded="true" signature="37:42" ph="..." />
-              </folding>
+            <state relative-caret-position="910">
+              <caret column="77980" selection-start-column="77976" selection-end-column="77980" />
             </state>
           </provider>
         </entry>
@@ -103,25 +129,47 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Osnabrü</find>
-      <find>Pressemeldungen</find>
-      <find>Raub</find>
-      <find>beschimpf</find>
-      <find>Beleidigung</find>
-      <find>Blitzeinschlag</find>
-      <find>gestohlen</find>
       <find>diebstahl</find>
       <find>Diebstahl</find>
       <find>Dieb</find>
       <find>Aufbrüche</find>
       <find>i[</find>
+      <find>ünstreifen</find>
+      <find>19019</find>
+      <find>hammenste</find>
+      <find>(city.+)*.*()</find>
+      <find>nienstaedt</find>
+      <find>Caramel</find>
+      <find>auto</find>
+      <find>gestohlen</find>
+      <find>ocated_data_22-october</find>
+      <find>classify</find>
+      <find>Drei mutmaßliche Wohnungseinbrecher</find>
+      <find>ür den Zeitraum vom 25.10.-27.10.2019</find>
+      <find>4410627</find>
+      <find>4384050</find>
+      <find>beschädigt</find>
+      <find>#</find>
+      <find>ERINNERUNG</find>
+      <find>Körperverletzung</find>
+      <find>schläge</find>
+      <find>items</find>
+      <find>django</find>
+      <find>print(</find>
+      <find>1571570134</find>
+      <find>11:15:34</find>
+      <find>date</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,10 +182,18 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/util/word.py" />
         <option value="$PROJECT_DIR$/natural.json" />
-        <option value="$PROJECT_DIR$/nlp/classes.py" />
         <option value="$PROJECT_DIR$/unclassified_data.json" />
         <option value="$PROJECT_DIR$/nlp/engine.py" />
+        <option value="$PROJECT_DIR$/nlp/dictionary/engine.py" />
+        <option value="$PROJECT_DIR$/nlp/util/word.py" />
+        <option value="$PROJECT_DIR$/nlp/util/text.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/nlp/classes.py" />
+        <option value="$PROJECT_DIR$/nlp/bag_of_words/engine.py" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/dump.xml" />
+        <option value="$PROJECT_DIR$/experimental.py" />
+        <option value="$PROJECT_DIR$/main_clustering.py" />
       </list>
     </option>
   </component>
@@ -147,10 +203,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="2560" />
-    <option name="height" value="1337" />
+    <option name="height" value="1350" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -178,6 +234,7 @@
             <path>
               <item name="shoutly_science" type="b2602c69:ProjectViewProjectNode" />
               <item name="shoutly_science" type="462c0819:PsiDirectoryNode" />
+              <item name="nlp" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -195,8 +252,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/nlp" />
+      <recent name="$PROJECT_DIR$/nlp/dictionary" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -211,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.shoutly_science">
+  <component name="RunManager" selected="Python.main_clustering">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="shoutly_science" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -256,6 +318,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="experimental" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="shoutly_science" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experimental.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_clustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="shoutly_science" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_clustering.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="shoutly_science" type="PythonConfigurationType" factoryName="Python">
       <module name="shoutly_science" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -269,7 +375,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_nlp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -304,9 +410,13 @@
       <item itemvalue="Python.shoutly_science" />
       <item itemvalue="Python.classes" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.main_clustering" />
+      <item itemvalue="Python.experimental" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_clustering" />
+        <item itemvalue="Python.experimental" />
         <item itemvalue="Python.classes" />
         <item itemvalue="Python.test" />
       </list>
@@ -323,6 +433,42 @@
       <option name="presentableId" value="Default" />
       <updated>1571610776262</updated>
     </task>
+    <task id="LOCAL-00001" summary="NLP to classify the reports">
+      <created>1571876666928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571876666928</updated>
+    </task>
+    <task id="LOCAL-00002" summary="classifications">
+      <created>1572293753063</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572293753063</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated dictionary">
+      <created>1572307693458</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572307693458</updated>
+    </task>
+    <task id="LOCAL-00004" summary="clustering algorithm">
+      <created>1573606338218</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573606338219</updated>
+    </task>
+    <task id="LOCAL-00005" summary="changed main to main_nlp">
+      <created>1573606354552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573606354552</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -335,69 +481,67 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25377283" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48864758" visible="true" weight="0.2875298" />
+      <window_info id="Structure" order="1" sideWeight="0.5113524" side_tool="true" weight="0.27958697" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329927" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.50039715" side_tool="true" visible="true" weight="0.32851407" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49960285" visible="true" weight="0.32851407" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.2257028" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5019857" side_tool="true" weight="0.39343065" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4980143" weight="0.29570746" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4980143" weight="0.29562044" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.46544877" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.27164418" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="NLP to classify the reports" />
+    <MESSAGE value="classifications" />
+    <MESSAGE value="updated dictionary" />
+    <MESSAGE value="clustering algorithm" />
+    <MESSAGE value="changed main to main_nlp" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed main to main_nlp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/nlp/classes.py</url>
+          <line>2</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/cities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -415,64 +559,191 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unclassified_data.json">
+    <entry file="file://$PROJECT_DIR$/nlp/util/cities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7182">
-          <caret line="114" column="43" lean-forward="true" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="802" />
+        <state relative-caret-position="90">
+          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nlp/engine.py">
+    <entry file="file://$PROJECT_DIR$/nlp/util/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/shoutly_science/lib/python3.6/site-packages/nltk/downloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <marker date="1571672905939" expanded="true" signature="122:123" ph="..." />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="2479" selection-start-line="2479" selection-end-line="2479" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/july-august-niedersachsen-2019.json">
+    <entry file="file://$USER_HOME$/.conda/envs/shoutly_science/lib/python3.6/site-packages/sklearn/feature_extraction/text.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret column="2637" selection-start-column="2637" selection-end-column="2637" />
+        <state relative-caret-position="236">
+          <caret line="1634" column="8" selection-start-line="1634" selection-start-column="8" selection-end-line="1634" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/word.py">
+    <entry file="file://$PROJECT_DIR$/bow.json" />
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/700564630/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="519" column="4" selection-start-line="519" selection-start-column="4" selection-end-line="519" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/words.json" />
+    <entry file="file://$PROJECT_DIR$/nlp/dictionary/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp/dictionary/engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp/bag_of_words/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp/util/word.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="16" selection-start-column="4" selection-end-column="16" />
-          <folding>
-            <marker date="1571671034261" expanded="true" signature="37:42" ph="..." />
-          </folding>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/date.py">
+    <entry file="file://$PROJECT_DIR$/nlp/util/text.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <marker date="1571614002956" expanded="true" signature="540:543" ph="..." />
-          </folding>
+        <state relative-caret-position="364">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unclassified_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" lean-forward="true" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="187" column="17" lean-forward="true" selection-start-line="187" selection-start-column="17" selection-end-line="187" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data-dump-28-october.json" />
+    <entry file="file://$PROJECT_DIR$/package.json" />
+    <entry file="file://$PROJECT_DIR$/main_nlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/shoutly_science/lib/python3.6/site-packages/matplotlib/figure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="1261" column="8" selection-start-line="1261" selection-start-column="8" selection-end-line="1261" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nlp/classes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="90">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/dump.xml" />
+    <entry file="file://$PROJECT_DIR$/data/data-dump-13-nov-2019.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        <state relative-caret-position="223">
+          <caret column="5139" selection-start-column="5138" selection-end-column="5139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/july-august-niedersachsen-2019.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret column="2637" selection-start-column="2637" selection-end-column="2637" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/located_data_22-october.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret column="4495" selection-start-column="421" selection-end-column="4495" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp/util/date.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp/bag_of_words/engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+            <marker date="1573600348480" expanded="true" signature="1813:1814" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dump-16-11-19.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret column="77980" selection-start-column="77976" selection-end-column="77980" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/shoutly_science/lib/python3.6/site-packages/pandas/plotting/_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="1364" column="8" selection-start-line="1364" selection-start-column="8" selection-end-line="1364" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/shoutly_science/lib/python3.6/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="2841" column="22" selection-start-line="2841" selection-start-column="22" selection-end-line="2841" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimental.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_clustering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1574021160372" expanded="true" signature="181:545" ph="..." />
+            <marker date="1574021160372" expanded="true" signature="2259:2314" ph="..." />
+            <marker date="1574021160372" expanded="true" signature="2313:2314" ph="..." />
           </folding>
         </state>
       </provider>

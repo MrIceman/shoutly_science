@@ -1,4 +1,4 @@
-MULTIPLE_INDEX = 101
+MULTIPLE_INDEX = 13
 
 CLASSES = {
     0: 'accident',
@@ -13,7 +13,7 @@ CLASSES = {
     9: 'demo',
     10: 'witness',
     11: 'prison',
-    100: 'other',
+    12: 'other',
     MULTIPLE_INDEX: 'multiple'
 }
 

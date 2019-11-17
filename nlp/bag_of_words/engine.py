@@ -45,7 +45,7 @@ def _get_weighted_words_of_stories(reports):
 def _classify_report(report, bag_of_words):
     found = False
     # by default the class is 'other'
-    report['class'] = CLASSES[100]
+    report['class'] = 12
     for word in bag_of_words:
         if found:
             return
@@ -55,9 +55,9 @@ def _classify_report(report, bag_of_words):
             if word_in_list(target_word, value):
                 # todo check if report has been classified already and if yes then evaluate
                 # the decision
-                if report['class'] != CLASSES[100] and report['class'] != CLASSES[key]:
+                if report['class'] != 12 and report['class'] != key:
                     # report has been classified already, if this is another classification then it is 'multiple
-                    report['class'] = CLASSES[MULTIPLE_INDEX]
+                    report['class'] = MULTIPLE_INDEX
                     return
-                classification = CLASSES[key]
+                classification = key
                 report['class'] = classification
