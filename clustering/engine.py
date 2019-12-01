@@ -32,14 +32,17 @@ class ClusterEngine:
     def get_means_for_clusters(self):
         mean_cords = []
         for _, v in self.clusters.items():
-            if len(v) < 5:
+            if len(v) < 4:
                 continue
+            print('cluster {} has {} items'.format(_, len(v)))
             # lets get the mean
             mean_lat = sum([p['lat'] for p in v]) / len(v)
             mean_lng = sum([p['lng'] for p in v]) / len(v)
+            items = [i for i in v]
             mean_cords.append({
                 'lat': mean_lat,
-                'lng': mean_lng
+                'lng': mean_lng,
+                'items': items
             })
         return mean_cords
 

@@ -1,7 +1,8 @@
-import random
-
-import matplotlib.pyplot as plt
 from pylab import *
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+from math import cos, asin, sqrt
 
 from clustering.engine import ClusterEngine
 
@@ -17,19 +18,17 @@ def get_color():
     return "#" + ''.join([random.choice('0123456789ABCDEF') for j in range(6)])
 
 
-with open('data/dump-16-11-19.json', 'r') as my_file:
+with open('data/dump-1-12-19.json', 'r') as my_file:
     data = json.load(my_file)
-CLASSIFICATION_TYPE = 0
+CLASSIFICATION_TYPE = 2
 
-engine = ClusterEngine(data, CLASSIFICATION_TYPE)
+engine = ClusterEngine(data, CLASSIFICATION_TYPE, distance_between_points_in_km=1)
 clusters = engine.get_clusters()
 
 x, y, colors = [], [], []
 last_color = None
 
 for _, v in clusters.items():
-    if len(v) < 5:
-        continue
 
     color = get_color()
     for i in v:
@@ -42,12 +41,11 @@ scatter(x, y, s=5, marker='o', c=colors, cmap=3)
 mean_lats = []
 mean_lngs = []
 mean_colors = []
-for _, v in clusters.items():
-    if len(v) < 5:
-        continue
+meaned_clusters = engine.get_means_for_clusters()
+for item in meaned_clusters:
     # lets get the mean
-    mean_lat = sum([p['lat'] for p in v]) / len(v)
-    mean_lng = sum([p['lng'] for p in v]) / len(v)
+    mean_lat = item['lat']
+    mean_lng = item['lng']
     mean_colors.append('#000000')
     mean_lats.append(mean_lat)
     mean_lngs.append(mean_lng)
