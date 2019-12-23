@@ -26,6 +26,13 @@ def classify_reports(reports):
         _classify_report(reports[report_index], bow)
 
 
+def get_word_matrix_for_reports(reports):
+    # go through each row, a row represents the values within a title
+    matrix, index_dict = _get_weighted_words_of_stories(reports)
+
+    return matrix
+
+
 # tokenizes the story, removes the stop words and
 # returns a matrix with all important words within a story
 def _get_weighted_words_of_stories(reports):
